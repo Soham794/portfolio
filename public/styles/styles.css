@@ -1,0 +1,13 @@
+.dark {
+    --lang-color: #fff;
+    --lang-background: #18181ba4;
+    --text-shadow: #18181b;
+    --selection-shade: #333;
+    --accent-1: #4ab7ff;
+    --accent-2: #b4f72f;
+    --accent-3: #06fafa;
+    --accent-4: #f5a207;
+    --hue-1: transparent;
+    --hue-2: #fff;
+    --hue-3: #c26af5;
+}

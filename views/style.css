@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+hr{
+    margin: 0;
+    height: 1px;
+    border-width: 0;
+    color:gray;
+    background-color:white;
+}
+
+img[src="./website_logo.png"]{
+    border-radius: 40%;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 20px;
+    margin: 30px 20px;
+}
+
+
+p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin: -20px 30px;
+}
+
+body{
+    font-family: "__incognito_1a39c7","__incognito_Fallback_1a39c7";
+    
+    font-family: "electrolize";
+}
+
+
+#main-intro{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+
+}
+
+#about{
+    height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#footer{
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-icons{
+    border: solid 10px white;
+    border-radius: 50%;
+
+}
+
+.dark{
+    background-color: #0d1117;
+    color: white;
+}
+
+.nav-it{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+
+
+.main-card{
+    margin-top: 5%;
+    height: 90vh;
+    width: 80%;
+    border-radius: 20px;
+    border: solid 1px gray;
+    border-bottom: none;
+}
+
+
+
+.profile-titles{
+    font-family: "orbitron";
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+
+.profile-pic{
+    float: right;
+    margin: 50px 100px;
+    border-radius: 50%;
+    height: 50%;
+}
+
+
+/* animations */
+
+.main-card > *{
+    animation: 1s fadeInUp;
+}
+.main-card img{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* responsive  */
+@media(max-width: 1000px){
+    
+}
