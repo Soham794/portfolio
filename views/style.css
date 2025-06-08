@@ -36,8 +36,6 @@ body{
 
 
 #main-intro{
-    height: auto;
-    max-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,6 +123,7 @@ body{
 
 .main-card{
     margin-top: 5%;
+    padding: 1%;
     width: 80%;
     border-radius: 20px;
     border: solid 1px gray;
