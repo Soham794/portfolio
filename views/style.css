@@ -26,13 +26,11 @@ h1{
 
 p{
     font-size: 1.4rem;
-    padding: 20px;
-    margin: -20px 30px;
+    line-height: 2.5;
 }
 
 body{
     font-family: "__incognito_1a39c7","__incognito_Fallback_1a39c7";
-    
     font-family: "electrolize";
 }
 
@@ -40,16 +38,18 @@ body{
 #main-intro{
     height: 100vh;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
+}
 
+#main-intro p{
+    margin: 0 3%;
 }
 
 #about{
     height: 100vh;
     width: 100%;
-    /* background-color: blue; */
+    margin: 0 auto;
 }
 
 #footer{
@@ -61,6 +61,40 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
+#about p{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.dev1{
+    display: block;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.dev2{
+    width: 80%;
+    margin: 5% auto;
+}
+
+
+.dev-img{
+    height: 17%;
+    width: 17%;
+    border-radius: 20px; 
+    margin-right: 5%;
+    float: left;
+}
+.dev-img2{
+    height: 17%;
+    width: 17%;
+    border-radius: 20px;
+    margin-left: 5%;
+    float: right;
+}
+
 
 .contact-icons{
     display: flex;
@@ -104,7 +138,6 @@ body{
 }
 
 
-
 .profile-titles{
     font-family: "orbitron";
     font-size: 3.5rem;
@@ -115,7 +148,6 @@ body{
     float: right;
     margin: 5%;
     border-radius: 50%;
-    height: 50%;
 }
 
 
@@ -124,7 +156,7 @@ body{
 .main-card > *{
     animation: 1s fadeInUp;
 }
-.main-card img{
+.main-card > img{
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
