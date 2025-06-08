@@ -57,19 +57,23 @@ body{
     width: 100%;
     background-color: black;
     text-align: center;
-}
-
-.contact-icons{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.round-icons{
-    border: solid 10px white;
-    border-radius: 50%;
-
+.contact-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
 }
+
+.foot-div{
+    height: 50%;
+    width: 50%;
+}
+
 
 .dark{
     background-color: #0d1117;
