@@ -23,27 +23,36 @@ hr{
 body{
     font-family: "__incognito_1a39c7","__incognito_Fallback_1a39c7";
     font-family: "electrolize";
+    font-size: 100%;
 }
 
 img[src="./website_logo.png"]{
     border-radius: 35%;
 }
 
-
 /* nav section */
 
 /* intro section */
 
 h1{
-    font-size: 5rem;
+    /* font-size: 5.5rem; */
+    font-size: 4vw;
     padding: 2%;
+    margin: 0%;
 }
 
-p{
-    font-size: 1.4rem;
-    line-height: 2.5;
-    /* padding: 1%; */
+.main-card ul{
+    margin-top: 2vh;
+    padding: 0;
 }
+
+.main-card li{
+    list-style: none;
+    /* font-size: 1.5rem; */
+    font-size: 1.3vw;
+    line-height: 2;
+}
+
 
 
 #main-intro{
@@ -56,30 +65,36 @@ p{
     padding: 1%;
     width: 85%;
     border-radius: 20px;
-    border: solid 1px gray;
+    border: solid 2px gray;
     border-bottom: none;
-
-
-
+    text-align: start;
 }
-
 
 .profile-title{
     font-family: "orbitron";
-    font-size: 4rem;
-    /* margin-bottom: 2%; */
+    /* font-size: 4rem; */
+    font-size: 3vw;
 }
 
 .profile-pic{
     float: left;
-    margin: 5%;
+    margin: 3%;
+    padding: 2%;
     border-radius: 50%;
-    width: 20vw;
+    width: 25vw;
 }
 
 
 /* about */
 
+
+p{
+    font-size: 1.4rem;
+    /* font-size: 1.4vw; */
+    line-height: 2.5;
+    margin: 0;
+    /* padding: 1%; */
+}
 
 /* footer */
 
@@ -183,7 +198,7 @@ p{
 
 @keyframes fadeInUp {
   0% {
-    transform: translateY(100%);
+    transform: translateY(25%);
     opacity: 0;
   }
   100% {
@@ -194,21 +209,24 @@ p{
 
 /* responsive  */
 
-@media(max-width: 390px){
+@media(max-width: 400px){
     .profile-pic{
-        width: 60vw;
-        /* margin: auto; */
+
+        width: 50vw;
+        float: none;
+    }
+    .main-card{
+        text-align: center;
     }
     h1{
-        font-size: 3rem;
+        font-size: 10vw;
     }
-    .profile-titles{
-        font-size: 2.5rem;
-        /* margin: 10% auto; */
+    .profile-title{
+        font-size: 5vw;
     }
-    p{
-        font-size: 1.2rem;
-        line-height: 2;
+    .main-card li{
+        font-size: 3vw;
+        padding: 0 10%;
     }
 }
 
