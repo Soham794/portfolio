@@ -14,7 +14,7 @@
 
 hr{
     margin: 0;
-    height: 1px;
+    height: 0.1vh;
     border-width: 0;
     color:gray;
     background-color:white;
@@ -28,21 +28,39 @@ body{
 
 img[src="./website_logo.png"]{
     border-radius: 35%;
+    margin: auto 10%;
 }
 
 /* nav section */
+
+h5{
+    display: inline;
+}
+
+.nav-it{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 4vw;
+}
+
+
 
 /* intro section */
 
 h1{
     /* font-size: 5.5rem; */
-    font-size: 4vw;
+    font-size: 4.5vw;
     padding: 2%;
     margin: 0%;
 }
 
 .main-card ul{
-    margin-top: 2vh;
+    margin-top: 2.5vh;
     padding: 0;
 }
 
@@ -53,8 +71,6 @@ h1{
     line-height: 2;
 }
 
-
-
 #main-intro{
     display: flex;
     justify-content: center;
@@ -64,16 +80,18 @@ h1{
     margin-top: 5%;
     padding: 1%;
     width: 85%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     border: solid 2px gray;
     border-bottom: none;
     text-align: start;
+    /* animation: fadeInUp; */
+    /* height: 80vh; */
 }
 
 .profile-title{
     font-family: "orbitron";
     /* font-size: 4rem; */
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 .profile-pic{
@@ -87,21 +105,54 @@ h1{
 
 /* about */
 
-
-p{
-    font-size: 1.4rem;
-    /* font-size: 1.4vw; */
-    line-height: 2.5;
-    margin: 0;
-    /* padding: 1%; */
+#about-section h2{
+    text-align: center;
+    margin: 10%;
+    font-size: 2.5vw;
 }
 
-/* footer */
+.underline{
+    height: 0.3vw;
+    margin: -8% auto -5% auto;
+    width: 7vw;
+    border-radius: 2vw;
+}
 
+p{
+    /* font-size: 1.4rem; */
+    font-size: 1.5vw;
+    line-height: 2.5;
+    margin: 0;
+}
 #about{
     width: 100%;
     margin: 0 auto;
 }
+
+
+.dev1, .dev2, .comp-prog{
+    width: 80%;
+    margin: 10% auto;
+}
+
+.dev-img1, .dev-img2, .comp-prog-img{
+    /* width: 17%; */
+    width: 15vw;
+    border-radius: 3vw; 
+    margin-right: 5%;
+    float: left;
+}
+
+.dev-img2{
+    margin-right: 0;
+    margin-left: 5%;
+    float: right;
+}
+
+
+
+/* footer */
+
 
 #footer{
     padding: 5%;
@@ -113,36 +164,6 @@ p{
     align-items: center;
 }
 
-
-.dev1{
-    display: block;
-    width: 80%;
-    margin: 10% auto;
-}
-
-.dev2{
-    width: 80%;
-    margin: 10% auto;
-}
-
-.comp-prog{
-    width: 80%;
-    margin: 5% auto;
-}
-
-.dev-img, .dev-img2, .comp-prog-img{
-    height: 17%;
-    width: 17%;
-    border-radius: 20px; 
-    margin-right: 5%;
-    float: left;
-}
-
-.dev-img2{
-    margin-right: 0;
-    margin-left: 5%;
-    float: right;
-}
 
 
 .contact-icons{
@@ -160,25 +181,17 @@ p{
 
 
 
-.nav-it{
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-list{
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-}
-
-
-
-
 /* animations */
+
+
+.main-card{
+    animation: 1.5s fadeInOpacity;
+}
 
 .main-card > *{
     animation: 1s fadeInUp;
 }
+
 .main-card > img{
 	opacity: 1;
 	animation-name: fadeInOpacity;
