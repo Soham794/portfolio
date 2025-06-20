@@ -162,7 +162,7 @@ p{
 #footer-section{
     background-color: black;
     width: 100%;
-    padding: 2%;
+    padding: 2% 0%;
 }
 
 #footer{
@@ -175,8 +175,13 @@ p{
 /* .foot-div{
 } */
 
-.foot-div .underline{
-    margin-top: -1vh;
+
+.foot-div h3{
+    font-size: 2vw;
+}
+
+.foot-div p{
+    font-size: 1vw;
 }
 
 .contact-info{
