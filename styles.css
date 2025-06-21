@@ -70,6 +70,16 @@ h5{
 
 }
 
+.logo{
+    margin-left: 5vw;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+}
+
 .nav-list{
     display: flex;
     justify-content: space-around;
@@ -184,12 +194,11 @@ p{
     align-items: center;
 }
 
-/* .foot-div{
-} */
 
 
 .foot-div h3{
     font-size: 2vw;
+    margin: 0;
 }
 
 .foot-div p{
@@ -251,6 +260,10 @@ p{
 /* responsive  */
 
 @media(max-width: 750px){
+    p{
+        /* font-size: 1.4rem; */
+        font-size: 2.5vw;
+    }
     .profile-pic{
         width: 50vw;
         float: none;
@@ -269,10 +282,25 @@ p{
         padding: 0 10%;
     }
 
+    .foot-div h3{
+        font-size: 4vw;
+        width: 100%;
+    }
 
+    .foot-div p{
+        font-size: 2vw;
+    }
 
-}
+    .contact-info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3vw 0vw;
+    }
 
-@media(max-width: 1250px){
+    .contact-icon{
+        width: 5vw;
+    }
+
 
 }
