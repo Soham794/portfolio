@@ -5,11 +5,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+
+:root{
+    --border-color: gray;
+    --dark-mode-bg: #0d1117;
+    --dark-mode-color: white;
+}
+
 /* common styles */
 
 .dark{
-    background-color: #0d1117;
-    color: white;
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-color);
 }
 
 hr{
@@ -28,7 +35,6 @@ body{
 
 img[src="./website_logo.png"]{
     border-radius: 35%;
-    margin: auto 10%;
 }
 
 h3{
@@ -47,13 +53,21 @@ h3{
 
 /* nav section */
 
-h5{
+
+
+h5{    
+    margin-left: 0.5vw;
     display: inline;
 }
 
-.nav-it{
+.nav-link:hover{
+    color: white;
+}
+
+.navit{
     display: flex;
     justify-content: space-around;
+
 }
 
 .nav-list{
@@ -61,7 +75,6 @@ h5{
     justify-content: space-around;
     gap: 4vw;
 }
-
 
 
 /* intro section */
@@ -98,8 +111,6 @@ h1{
     border: solid 2px gray;
     border-bottom: none;
     text-align: start;
-    /* animation: fadeInUp; */
-    /* height: 80vh; */
 }
 
 .profile-title{
@@ -239,9 +250,8 @@ p{
 
 /* responsive  */
 
-@media(max-width: 400px){
+@media(max-width: 750px){
     .profile-pic{
-
         width: 50vw;
         float: none;
     }
