@@ -44,8 +44,8 @@ h3{
 }
 
 .underline{
-    height: 0.3vw;
-    width: 7vw;
+    height: 0.4vw;
+    width: 4vw;
     border-radius: 2vw;
     margin-left: auto;
     margin-right: auto;
@@ -141,50 +141,67 @@ h1{
 /* about */
 
 
-
-#about-section .underline{
-    margin-top: -8%;
-    margin-bottom: -5%;
-}
-
-p{
-    /* font-size: 1.4rem; */
-    font-size: 1.5vw;
-    line-height: 2.5;
-    margin: 0;
-}
 #about{
     width: 100%;
     margin: 0 auto;
 }
 
-
-.dev1, .dev2, .comp-prog{
+#about div{
     width: 80%;
-    margin: 10% auto;
+    margin: 4% auto;
     text-align: center;
 }
 
-.dev-img1, .dev-img2, .comp-prog-img{
-    /* width: 17%; */
-    width: 15vw;
-    border-radius: 3vw; 
-    margin-right: 5%;
-    float: left;
+.about-text h3{
+    margin: 2% auto;
 }
 
-.dev-img2{
-    margin-right: 0;
-    margin-left: 5%;
-    float: right;
+.about-text{
+    /* font-size: 1.4vw; */
+    font-size: 1.5rem;
+    line-height: 2.5;
+    margin: 0;
+    text-align: center;
 }
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.info p{
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+#about h4{
+    text-align: center;
+    margin: 3% auto;
+}
+
+.stack img{
+    width: 3.5vw;
+    margin: 4% 2%;
+}
+
+.cp-profiles a{
+    text-decoration: none;
+}
+.cp-profiles img{
+    width: 5vw;
+    height: 5vw;
+    margin: 4%;
+}
+
 
 /* footer */
 
 #footer-section{
     background-color: black;
     width: 100%;
-    padding: 2% 0%;
+    padding: 4% 0%;
 
 }
 
@@ -195,11 +212,14 @@ p{
     align-items: center;
 }
 
-
-
-.foot-div h3{
+.foot-text h3{
     font-size: 2vw;
-    margin: 0;
+    margin: 2% auto;
+}
+
+.foot-text h4{
+    font-size: 1.2vw;
+    margin: 3% auto;
 }
 
 .foot-div p{
@@ -215,6 +235,11 @@ p{
 
 .contact-icon{
     width: 3vw;
+}
+
+.foot-div .underline{
+    width: 3vw;
+    height: 0.5vh;
 }
 
 
@@ -283,9 +308,13 @@ p{
         padding: 0 10%;
     }
 
-    .foot-div h3{
+    .foot-text h3{
         font-size: 4vw;
         width: 100%;
+    }
+    .foot-text h4{
+        font-size: 3vw;
+        width: 80%;
     }
 
     .foot-div p{
@@ -303,5 +332,27 @@ p{
         width: 5vw;
     }
 
+}
 
+@media (max-width: 1000px){
+    
+    .main-card li{
+        font-size: 2.5vw;
+        padding: 0 10%;
+    }
+
+    #about h4, #about h3{
+        font-size: 3vw;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .info p, .dev h4{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .stack img{
+        width: 5vw;
+    }
 }
