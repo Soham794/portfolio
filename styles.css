@@ -162,6 +162,7 @@ p{
 .dev1, .dev2, .comp-prog{
     width: 80%;
     margin: 10% auto;
+    text-align: center;
 }
 
 .dev-img1, .dev-img2, .comp-prog-img{
